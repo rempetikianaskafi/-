@@ -7,15 +7,17 @@
     <style>
         body { margin: 0; font-family: Georgia, serif; background: #f3ead8; color: #2b2118; }
         header { background: #2b2118; color: #f3ead8; text-align: center; padding: 45px 20px; }
-        header h1 { font-size: 42px; margin: 0; letter-spacing: 3px; }
+        header h1 { font-size: 40px; margin: 0; letter-spacing: 3px; }
+        header p { font-size: 18px; margin-top: 10px; }
         nav { background: #5b402c; text-align: center; padding: 15px; }
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
         .hero { text-align: center; padding: 40px 20px; }
+        .hero h2 { font-size: 28px; color: #5b402c; }
         .section { padding: 20px; max-width: 900px; margin: auto; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: #fffaf0; border: 1px solid #c8b89d; border-radius: 6px; padding: 20px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
-        .card img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 2px solid #5b402c; }
-        .card h3 { margin: 10px 0 5px 0; color: #2b2118; }
+        .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; }
+        .card { background: #fffaf0; border: 1px solid #c8b89d; border-radius: 6px; padding: 25px; text-align: center; width: 280px; box-shadow: 0 4px 8px rgba(0,0,0,0.06); }
+        .card img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 3px solid #5b402c; }
+        .card h3 { margin: 10px 0 5px 0; color: #2b2118; font-size: 22px; }
         .card p { color: #666; font-size: 14px; margin-bottom: 20px; }
         .btn { display: inline-block; background: #5b402c; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; }
         .btn:hover { background: #4a3221; }
@@ -34,24 +36,22 @@
 </nav>
 
 <section class="hero">
-    <h2>Καλώς ήρθατε</h2>
+    <h2>Καλώς ήρθατε στις Ρεμπέτικες Διαδρομές</h2>
     <p>Εξερευνήστε τις ζωές και το έργο των μεγάλων δημιουργών του ρεμπέτικου.</p>
 </section>
 
 <section class="section">
     <div class="grid">
 
-        <!-- ΚΑΡΤΑ ΜΑΡΚΟΥ -->
         <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Markos_Vamvakaris.jpg/640px-Markos_Vamvakaris.jpg" alt="Μάρκος Βαμβακάρης">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Markos_Vamvakaris.jpg" alt="Μάρκος Βαμβακάρης">
             <h3>Μάρκος Βαμβακάρης</h3>
             <p>1905 – 1972</p>
             <a href="vamvakaris.html" class="btn">Διαβάστε το Άρθρο →</a>
         </div>
 
-        <!-- ΚΑΡΤΑ ΤΣΙΤΣΑΝΗ (ΠΡΟΕΤΟΙΜΑΣΙΑ) -->
         <div class="card">
-            <div style="width:120px; height:120px; background:#e2d5c1; border-radius:50%; margin:0 auto 15px; display:flex; align-items:center; justify-content:center; color:#5b402c; font-weight:bold;">Τσιτσάνης</div>
+            <div style="width:140px; height:140px; background:#e2d5c1; border-radius:50%; margin:0 auto 15px; display:flex; align-items:center; justify-content:center; color:#5b402c; font-weight:bold; border: 3px solid #5b402c;">Τσιτσάνης</div>
             <h3>Βασίλης Τσιτσάνης</h3>
             <p>1915 – 1984</p>
             <span style="color: #888; font-size: 14px;">Σύντομα διαθέσιμο</span>
