@@ -6,59 +6,42 @@
     <title>Ρεμπέτικες Διαδρομές - Αρχική</title>
     <style>
         body { margin: 0; font-family: Georgia, serif; background: #f3ead8; color: #2b2118; }
-        header { background: #2b2118; color: #f3ead8; text-align: center; padding: 45px 20px; }
-        header h1 { font-size: 40px; margin: 0; letter-spacing: 3px; }
-        header p { font-size: 18px; margin-top: 10px; }
-        nav { background: #5b402c; text-align: center; padding: 15px; }
+        header { background: #2b2118; color: #f3ead8; text-align: center; padding: 35px 20px; }
+        header h1 { margin: 0; font-size: 32px; letter-spacing: 2px; }
+        nav { background: #5b402c; text-align: center; padding: 14px; }
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-        .hero { text-align: center; padding: 40px 20px; }
-        .hero h2 { font-size: 28px; color: #5b402c; }
-        .section { padding: 20px; max-width: 900px; margin: auto; }
-        .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; }
-        .card { background: #fffaf0; border: 1px solid #c8b89d; border-radius: 6px; padding: 25px; text-align: center; width: 280px; box-shadow: 0 4px 8px rgba(0,0,0,0.06); }
-        .card img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 3px solid #5b402c; }
-        .card h3 { margin: 10px 0 5px 0; color: #2b2118; font-size: 22px; }
-        .card p { color: #666; font-size: 14px; margin-bottom: 20px; }
-        .btn { display: inline-block; background: #5b402c; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; }
-        .btn:hover { background: #4a3221; }
-        footer { background: #2b2118; color: #f3ead8; text-align: center; padding: 25px; margin-top: 50px; }
+        .container { max-width: 800px; margin: 30px auto; background: #ffffff; padding: 35px; border: 1px solid #c8b89d; border-radius: 6px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .artist-card { border: 1px solid #c8b89d; padding: 20px; border-radius: 6px; background: #fdf6e7; margin-top: 25px; display: inline-block; width: 80%; text-align: center; }
+        .artist-card img { max-width: 100%; height: auto; border-radius: 4px; border: 1px solid #c8b89d; }
+        .artist-card h2 { color: #5b402c; margin-top: 15px; margin-bottom: 5px; }
+        .btn { display: inline-block; background: #5b402c; color: white; text-decoration: none; padding: 10px 20px; border-radius: 4px; font-weight: bold; margin-top: 15px; }
+        .btn:hover { background: #2b2118; }
+        footer { background: #2b2118; color: #f3ead8; text-align: center; padding: 25px; margin-top: 40px; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>ΡΕΜΠΕΤΙΚΕΣ ΔΙΑΔΡΟΜΕΣ</h1>
-    <p>Ιστορίες, πρόσωπα και τραγούδια από τα παλιά</p>
 </header>
 
 <nav>
-    <a href="index.html">Αρχική</a>
+    <a href="index.html">Αρχική Σελίδα</a>
 </nav>
 
-<section class="hero">
+<div class="container">
     <h2>Καλώς ήρθατε στις Ρεμπέτικες Διαδρομές</h2>
-    <p>Εξερευνήστε τις ζωές και το έργο των μεγάλων δημιουργών του ρεμπέτικου.</p>
-</section>
+    <p>Εξερευνήστε τις προσωπικότητες και την ιστορία του αυθεντικού ρεμπέτικου τραγουδιού.</p>
 
-<section class="section">
-    <div class="grid">
-
-        <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Markos_Vamvakaris.jpg" alt="Μάρκος Βαμβακάρης">
-            <h3>Μάρκος Βαμβακάρης</h3>
-            <p>1905 – 1972</p>
-            <a href="vamvakaris.html" class="btn">Διαβάστε το Άρθρο →</a>
-        </div>
-
-        <div class="card">
-            <div style="width:140px; height:140px; background:#e2d5c1; border-radius:50%; margin:0 auto 15px; display:flex; align-items:center; justify-content:center; color:#5b402c; font-weight:bold; border: 3px solid #5b402c;">Τσιτσάνης</div>
-            <h3>Βασίλης Τσιτσάνης</h3>
-            <p>1915 – 1984</p>
-            <span style="color: #888; font-size: 14px;">Σύντομα διαθέσιμο</span>
-        </div>
-
+    <div class="artist-card">
+        <a href="vamvakaris.html">
+            <img src="vamvakaris.jpg" alt="Μάρκος Βαμβακάρης">
+        </a>
+        <h2>Μάρκος Βαμβακάρης</h2>
+        <p>Ο Πατριάρχης του Ρεμπέτικου (1905 – 1972)</p>
+        <a href="vamvakaris.html" class="btn">Διαβάστε την Ιστορία του →</a>
     </div>
-</section>
+</div>
 
 <footer>
     <p>Ρεμπέτικες Διαδρομές © 2026</p>
