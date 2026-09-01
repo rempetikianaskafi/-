@@ -3,321 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ρεμπέτικη Ανασκαφή</title>
-
+    <title>Ρεμπέτικες Διαδρομές - Αρχική</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Georgia, serif;
-            background: #f3ead8;
-            color: #2b2118;
-        }
-
-        header {
-            background: #2b2118;
-            color: #f3ead8;
-            text-align: center;
-            padding: 45px 20px;
-        }
-
-        header h1 {
-            font-size: 42px;
-            margin: 0;
-            letter-spacing: 3px;
-        }
-
-        header p {
-            font-size: 18px;
-            margin-top: 12px;
-        }
-
-        nav {
-            background: #5b402c;
-            text-align: center;
-            padding: 15px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 12px;
-            font-size: 16px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .hero h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            max-width: 700px;
-            margin: auto;
-            line-height: 1.7;
-            font-size: 18px;
-        }
-
-        .section {
-            padding: 30px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .section h2 {
-            text-align: center;
-            font-size: 30px;
-            margin-bottom: 30px;
-            color: #5b402c;
-        }
-
-        .card-container {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-
-        details.card {
-            background: #fffaf0;
-            border: 1px solid #c8b89d;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        summary.card-header {
-            padding: 20px;
-            cursor: pointer;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            user-select: none;
-        }
-
-        summary.card-header::-webkit-details-marker {
-            display: none;
-        }
-
-        .photo {
-            width: 100px;
-            height: 100px;
-            background: #d1c1a8;
-            flex-shrink: 0;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .card-title-box {
-            flex-grow: 1;
-        }
-
-        .card-title-box h3 {
-            margin: 0 0 5px 0;
-            font-size: 24px;
-            color: #2b2118;
-        }
-
-        .card-title-box p {
-            margin: 0;
-            color: #666;
-            font-size: 15px;
-        }
-
-        .toggle-btn {
-            background: #5b402c;
-            color: white;
-            padding: 8px 16px;
-            font-size: 14px;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-
-        .card-content {
-            padding: 25px;
-            border-top: 1px solid #c8b89d;
-            background: #ffffff;
-            line-height: 1.8;
-            font-size: 17px;
-        }
-
-        .card-content h4 {
-            color: #5b402c;
-            font-size: 20px;
-            margin-top: 25px;
-            margin-bottom: 8px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-        }
-
-        .card-content h4:first-child {
-            margin-top: 0;
-        }
-
-        blockquote {
-            background: #fdf6e7;
-            border-left: 4px solid #5b402c;
-            margin: 15px 0;
-            padding: 12px 18px;
-            font-style: italic;
-            color: #4a3829;
-        }
-
-        .photo-box {
-            background: #f3ead8;
-            border: 1px solid #c8b89d;
-            padding: 15px;
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .photo-box img {
-            max-width: 100%;
-            max-height: 350px;
-            height: auto;
-        }
-
-        .source-box {
-            background: #f8f1e5;
-            border: 1px dashed #5b402c;
-            padding: 15px;
-            margin-top: 35px;
-            font-size: 15px;
-            border-radius: 4px;
-        }
-
-        footer {
-            background: #2b2118;
-            color: #f3ead8;
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-        }
+        body { margin: 0; font-family: Georgia, serif; background: #f3ead8; color: #2b2118; }
+        header { background: #2b2118; color: #f3ead8; text-align: center; padding: 45px 20px; }
+        header h1 { font-size: 42px; margin: 0; letter-spacing: 3px; }
+        nav { background: #5b402c; text-align: center; padding: 15px; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        .hero { text-align: center; padding: 40px 20px; }
+        .section { padding: 20px; max-width: 900px; margin: auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: #fffaf0; border: 1px solid #c8b89d; border-radius: 6px; padding: 20px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .card img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 2px solid #5b402c; }
+        .card h3 { margin: 10px 0 5px 0; color: #2b2118; }
+        .card p { color: #666; font-size: 14px; margin-bottom: 20px; }
+        .btn { display: inline-block; background: #5b402c; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; }
+        .btn:hover { background: #4a3221; }
+        footer { background: #2b2118; color: #f3ead8; text-align: center; padding: 25px; margin-top: 50px; }
     </style>
 </head>
-
 <body>
 
 <header>
-    <h1>ΡΕΜΠΕΤΙΚΗ ΑΝΑΣΚΑΦΗ</h1>
+    <h1>ΡΕΜΠΕΤΙΚΕΣ ΔΙΑΔΡΟΜΕΣ</h1>
     <p>Ιστορίες, πρόσωπα και τραγούδια από τα παλιά</p>
 </header>
 
 <nav>
-    <a href="#home">Αρχική</a>
-    <a href="#composers">Συνθέτες</a>
-    <a href="#about">Σχετικά</a>
+    <a href="index.html">Αρχική</a>
 </nav>
 
-<section class="hero" id="home">
-    <h2>Καλώς ήρθατε στη Ρεμπέτικη Ανασκαφή</h2>
-    <p>
-        Ένα ταξίδι στην ιστορία του ρεμπέτικου τραγουδιού.
-        Πρόσωπα, συνθέτες, μουσικοί, τραγούδια, ιστορίες και
-        πληροφορίες από βιβλία, αυτοβιογραφίες και μαρτυρίες.
-    </p>
+<section class="hero">
+    <h2>Καλώς ήρθατε</h2>
+    <p>Εξερευνήστε τις ζωές και το έργο των μεγάλων δημιουργών του ρεμπέτικου.</p>
 </section>
 
-<section class="section" id="composers">
-    <h2>Πρόσωπα του Ρεμπέτικου</h2>
+<section class="section">
+    <div class="grid">
 
-    <div class="card-container">
+        <!-- ΚΑΡΤΑ ΜΑΡΚΟΥ -->
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Markos_Vamvakaris.jpg/640px-Markos_Vamvakaris.jpg" alt="Μάρκος Βαμβακάρης">
+            <h3>Μάρκος Βαμβακάρης</h3>
+            <p>1905 – 1972</p>
+            <a href="vamvakaris.html" class="btn">Διαβάστε το Άρθρο →</a>
+        </div>
 
-        <!-- ΚΑΡΤΑ ΜΑΡΚΟΥ ΒΑΜΒΑΚΑΡΗ -->
-        <details class="card" open>
-            <summary class="card-header">
-                <div class="photo">
-                    <img src="http://googleusercontent.com/image_collection/image_retrieval/16821560065000648883" alt="Μάρκος Βαμβακάρης">
-                </div>
-                <div class="card-title-box">
-                    <h3>Μάρκος Βαμβακάρης</h3>
-                    <p>Ο Πατριάρχης του Ρεμπέτικου (1905 – 1972)</p>
-                </div>
-                <div class="toggle-btn">Διαβάστε περισσότερα ▼</div>
-            </summary>
-
-            <div class="card-content">
-                <div class="photo-box">
-                    <img src="http://googleusercontent.com/image_collection/image_retrieval/16821560065000648883" alt="Μάρκος Βαμβακάρης">
-                </div>
-
-                <h4>Γέννηση και Πρώτα Χρόνια στη Σύρο</h4>
-                <p>Ο Μάρκος Βαμβακάρης γεννήθηκε στις 10 Μαΐου 1905 στην Άνω Σύρο. Καταγόταν από φτωχή οικογένεια Καθολικών. Ο πατέρας του έπαιζε τσαμπούνα και ο παππούς του έγραφε στίχους, οπότε είχε από μικρός ερεθίσματα από τη λαϊκή μουσική.</p>
-
-                <h4>Η πρώτη επαφή με το μπουζούκι στο στρατό</h4>
-                <p>Όπως αφηγείται ο ίδιος, έμαθε να παίζει μπουζούκι όταν υπηρέτησε τη στρατιωτική του θητεία:</p>
-                <blockquote>
-                    «Όταν επήγα στρατιώτης, είπαμε, έμαθα το πρώτον το μπουζούκι... Ήταν τσαπουρνάς και το βάσταγα. Δηλαδή, ότι με καταλάβαινε ότι είμαι χασικλής με το μπαγλαμά... Εγώ ξεκίνησα κι άρχισα το μπουζούκι που σου συζητάω ότι ήρθε αυτός ο Νίκος ο Αϊβαλιώτης στο σπίτι.»
-                </blockquote>
-                <p>Ξεκίνησε να παίζει χωρίς να υπολογίζει αρχικά τα χρήματα, από καθαρό μεράκι και αγάπη για το όργανο, παίζοντας σε μαγαζιά και ορχήστρες της εποχής.</p>
-
-                <h4>Ο Στράτος Παγιουμτζής & ο Γιώργος Μπάτης</h4>
-                <p>Στις αναμνήσεις του ο Μάρκος μιλά με θερμά λόγια για τους συνεργάτες του. Για τον Στράτο Παγιουμτζή αναφέρει πως ήταν ένας εξαιρετικός άνθρωπος και τραγουδιστής που δούλευε στο λιμάνι του Πειραιά, ενώ για τον Γιώργο Μπάτη σημειώνει την εξυπνάδα και το χιούμορ του:</p>
-                <blockquote>
-                    «Ο Γιώργος ο Μπάτης, Θεός σχωρέστοv, έχει πεθάνει τώρα 6-7 χρόνια. Με αυτόν επέρασα αρκετό καιρό παρά πολύ καλά. Αυτός ήταν ο άνθρωπος που μας έδινε λεφτά και όταν δουλεύαμε του τα δίναμε... Ήταν ο Μπάτης ο πιο μεγάλος απ' όλους μας.»
-                </blockquote>
-
-                <h4>Πώς έγραφε τους στίχους και τη μουσική</h4>
-                <p>Ο τρόπος που δημιουργούσε τα τραγούδια του ήταν άμεσος και βιωματικός. Έγραφε τους στίχους πρώτα σε ένα τετράδιο, κρατώντας πάντα τη μουσική στο μυαλό του:</p>
-                <blockquote>
-                    «Τα λόγια έγραφα πρώτα σ' ένα τετράδιο, εβάσταγα πάντα ένα τετράδιο, και κατόπιν έβαζα μουσική. Τη μουσική τη θυμόμουνα... Όταν το μαγνητοφωνώ τραγουδάω με ψεύτικα λόγια. Τελείωσε. Μόλις θα μαγνητοφωνήσω θα βάλω τα σωστά λόγια.»
-                </blockquote>
-                <p>Όταν είχε στενοχώρια ή ήταν μόνος, η έμπνευση ερχόταν πιο εύκολα, γράφοντας στίχους σε ένα πακέτο τσιγάρα ή όπου έβρισκε.</p>
-
-                <h4>Η άποψή του για το μπουζούκι</h4>
-                <p>Για τον Μάρκο, το μπουζούκι ήταν ένα όργανο γεμάτο μυστικά που απαιτούσε αφοσίωση:</p>
-                <blockquote>
-                    «Το μπουζούκι και τα ταξίμια του και τα μυστήριά του, αυτά είναι πράγματα που τα ξέρει ο καθένας, ούτε και γράφονται σε βιβλίο γιατί πώς θα το καταλάβει ο άλλος χωρίς να ακούει και να βλέπει πώς θα το κάνω εγώ τώρα στο όργανο... Εγώ τα βρήκα αυτά από τους παλιούς σιγά σιγά, στους τεκέδες και στις φυλακές... Είχα πολύ μεράκι κι όλο μ' αυτό το μπουζούκι είχα να κάνω. Είχαμε, γι' αυτό το όργανο θυσίασα το παν. Με ανέβασε πολύ ψηλά.»
-                </blockquote>
-
-                <!-- ΠΛΑΙΣΙΟ ΠΗΓΗΣ / ΒΙΒΛΙΟΓΡΑΦΙΑΣ -->
-                <div class="source-box">
-                    <strong>📌 Πηγή Πληροφοριών & Αποσπασμάτων:</strong><br>
-                    Τα κείμενα και τα αυθεντικά αποσπάσματα προέρχονται από το βιβλίο:<br>
-                    <em>«Μάρκος Βαμβακάρης - Αυτοβιογραφία»</em>, Αγγελική Βέλλου-Κάιλ, Εκδόσεις Παπαζήση.
-                </div>
-            </div>
-        </details>
-
-        <!-- ΚΑΡΤΑ ΒΑΣΙΛΗ ΤΣΙΤΣΑΝΗ -->
-        <details class="card">
-            <summary class="card-header">
-                <div class="photo" style="display:flex; align-items:center; justify-content:center; color:#5b402c;">Φωτογραφία</div>
-                <div class="card-title-box">
-                    <h3>Βασίλης Τσιτσάνης</h3>
-                    <p>Ο αναμορφωτής της λαϊκής μουσικής (1915 – 1984)</p>
-                </div>
-                <div class="toggle-btn">Διαβάστε περισσότερα ▼</div>
-            </summary>
-            <div class="card-content">
-                <p>Σύντομα θα προστεθεί το πλήρες άρθρο για τον Βασίλη Τσιτσάνη.</p>
-            </div>
-        </details>
+        <!-- ΚΑΡΤΑ ΤΣΙΤΣΑΝΗ (ΠΡΟΕΤΟΙΜΑΣΙΑ) -->
+        <div class="card">
+            <div style="width:120px; height:120px; background:#e2d5c1; border-radius:50%; margin:0 auto 15px; display:flex; align-items:center; justify-content:center; color:#5b402c; font-weight:bold;">Τσιτσάνης</div>
+            <h3>Βασίλης Τσιτσάνης</h3>
+            <p>1915 – 1984</p>
+            <span style="color: #888; font-size: 14px;">Σύντομα διαθέσιμο</span>
+        </div>
 
     </div>
 </section>
 
 <footer>
-    <p>Ρεμπέτικη Ανασκαφή © 2026</p>
-    <p style="font-size: 13px; color: #a89f91;">
-        Οι αφήγησεις του Μάρκου Βαμβακάρη βασίζονται στην έκδοση «Μάρκος Βαμβακάρης - Αυτοβιογραφία» (Αγγελική Βέλλου-Κάιλ, Εκδόσεις Παπαζήση).
-    </p>
+    <p>Ρεμπέτικες Διαδρομές © 2026</p>
 </footer>
 
 </body>
