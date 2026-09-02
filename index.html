@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ρεμπέτικες Διαδρομές - Αρχική</title>
+    <title>Ρεμπέτικες Διαδρομές - Αρχική Σελίδα</title>
     <style>
         body { margin: 0; font-family: Georgia, serif; background: #f3ead8; color: #2b2118; }
-        header { background: #2b2118; color: #f3ead8; text-align: center; padding: 35px 20px; }
-        header h1 { margin: 0; font-size: 32px; letter-spacing: 2px; }
+        header { background: #2b2118; color: #f3ead8; text-align: center; padding: 40px 20px; }
+        header h1 { margin: 0; font-size: 36px; letter-spacing: 2px; }
+        header p { margin: 10px 0 0 0; font-size: 18px; color: #d6c5a8; font-style: italic; }
         nav { background: #5b402c; text-align: center; padding: 14px; }
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-        .container { max-width: 1100px; margin: 30px auto; background: #ffffff; padding: 35px; border: 1px solid #c8b89d; border-radius: 6px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        
-        .artists-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
-        
-        .artist-card { border: 1px solid #c8b89d; padding: 20px; border-radius: 6px; background: #fdf6e7; width: 230px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
-        .artist-card img { width: 100%; height: 210px; object-fit: cover; border-radius: 4px; border: 1px solid #c8b89d; }
-        .artist-card h2 { color: #5b402c; margin-top: 15px; margin-bottom: 5px; font-size: 18px; }
-        .artist-card p { font-size: 13px; color: #666; margin-bottom: 15px; }
-        .btn { display: inline-block; background: #5b402c; color: white; text-decoration: none; padding: 8px 14px; border-radius: 4px; font-weight: bold; font-size: 13px; }
-        .btn:hover { background: #2b2118; }
+        nav a:hover { text-decoration: underline; }
+        .container { max-width: 900px; margin: 30px auto; background: #ffffff; padding: 40px; border: 1px solid #c8b89d; border-radius: 6px; line-height: 1.8; font-size: 18px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        h2 { color: #5b402c; border-bottom: 2px solid #e8decb; padding-bottom: 6px; margin-top: 35px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
+        .card { background: #fdf6e7; border: 1px solid #c8b89d; padding: 20px; border-radius: 6px; text-align: center; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(91,64,44,0.15); }
+        .card h3 { color: #5b402c; margin-top: 10px; margin-bottom: 5px; }
+        .card p { font-size: 15px; color: #666; margin-bottom: 15px; }
+        .card a { display: inline-block; background: #5b402c; color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 15px; }
+        .card a:hover { background: #2b2118; }
+        .source-box { background: #f8f1e5; border: 1px dashed #5b402c; padding: 15px; margin-top: 40px; font-size: 15px; border-radius: 4px; }
         footer { background: #2b2118; color: #f3ead8; text-align: center; padding: 25px; margin-top: 40px; }
     </style>
 </head>
@@ -27,63 +29,54 @@
 
 <header>
     <h1>ΡΕΜΠΕΤΙΚΕΣ ΔΙΑΔΡΟΜΕΣ</h1>
+    <p>Αφιέρωμα στους μεγάλους δημιουργούς και θρύλους του ρεμπέτικου τραγουδιού</p>
 </header>
 
 <nav>
-    <a href="index.html">Αρχική Σελίδα</a>
+    <a href="index.html">Αρχική</a>
+    <a href="delias.html">Ανέστης Δελιάς</a>
+    <a href="hatjichristos.html">Απόστολος Χατζηχρήστος</a>
+    <a href="batis.html">Γιώργος Μπάτης</a>
+    <a href="papaioannou.html">Γιάννης Παπαϊωάννου</a>
 </nav>
 
 <div class="container">
-    <h2>Καλώς ήρθατε στις Ρεμπέτικες Διαδρομές</h2>
-    <p>Εξερευνήστε τις προσωπικότητες και την ιστορία του αυθεντικού ρεμπέτικου τραγουδιού.</p>
+    <h2 style="margin-top: 0;">Καλώς ήρθατε στις Ρεμπέτικες Διαδρομές</h2>
+    <p>Το ρεμπέτικο τραγούδι αποτελεί την ψυχή, τον καημό, τη χαρά και την αντίσταση του λαϊκού ανθρώπου. Μέσα από τα καφενεία, τους τεκέδες, τα προσφυγικά παράπηγματα και αργότερα τα μεγάλα κέντρα, γεννήθηκαν μορφές θρυλικές που σφράγισαν με την τέχνη και τη ζωή τους την ιστορία της ελληνικής μουσικής.</p>
+    
+    <p>Σε αυτόν τον δικτυακό τόπο, μπορείτε να περιηγηθείτε στις ζωές και στο έργο τεσσάρων εμβληματικών δημιουργών που καθόρισαν την πορεία του είδους:</p>
 
-    <div class="artists-grid">
-        
-        <!-- Μάρκος Βαμβακάρης -->
-        <div class="artist-card">
-            <a href="vamvakaris.html">
-                <img src="vamvakaris.jpg" alt="Μάρκος Βαμβακάρης">
-            </a>
-            <h2>Μάρκος Βαμβακάρης</h2>
-            <p>Ο Πατριάρχης του Ρεμπέτικου</p>
-            <a href="vamvakaris.html" class="btn">Διαβάστε την Ιστορία →</a>
+    <div class="grid">
+        <div class="card">
+            <h3>Ανέστης Δελιάς</h3>
+            <p>Ο Μικρασιάτης «αριστοκράτης» και δεξιοτέχνης του μπαγλαμά (1912–1944).</p>
+            <a href="delias.html">Διαβάστε Περισσότερα</a>
         </div>
-
-        <!-- Βασίλης Τσιτσάνης -->
-        <div class="artist-card">
-            <a href="tsitsanis.html">
-                <img src="tsitsanis.jpg" alt="Βασίλης Τσιτσάνης">
-            </a>
-            <h2>Βασίλης Τσιτσάνης</h2>
-            <p>Ο Αναμορφωτής του Λαϊκού</p>
-            <a href="tsitsanis.html" class="btn">Διαβάστε την Ιστορία →</a>
+        <div class="card">
+            <h3>Απόστολος Χατζηχρήστος</h3>
+            <p>Η μελαγχολική ιδιοφυΐα και λυρικός συνθέτης του μεσοπολέμου (1901–1959).</p>
+            <a href="hatjichristos.html">Διαβάστε Περισσότερα</a>
         </div>
-
-        <!-- Στράτος Παγιουμτζής -->
-        <div class="artist-card">
-            <a href="pagioumtzis.html">
-                <img src="pagioumtzis.jpg" alt="Στράτος Παγιουμτζής">
-            </a>
-            <h2>Στράτος Παγιουμτζής</h2>
-            <p>Ο Τενόρος του Ρεμπέτικου</p>
-            <a href="pagioumtzis.html" class="btn">Διαβάστε την Ιστορία →</a>
+        <div class="card">
+            <h3>Γιώργος Μπάτης</h3>
+            <p>Ο εκκεντρικός μάγκας του Πειραιά και ιδρυτής του «Σωτήρα» (1889–1954).</p>
+            <a href="batis.html">Διαβάστε Περισσότερα</a>
         </div>
-
-        <!-- Γιάννης Παπαϊωάννου -->
-        <div class="artist-card">
-            <a href="papaioannou.html">
-                <img src="papaioannou.jpg" alt="Γιάννης Παπαϊωάννου">
-            </a>
-            <h2>Γιάννης Παπαϊωάννου</h2>
-            <p>Ο Ψηλός του Ρεμπέτικου</p>
-            <a href="papaioannou.html" class="btn">Διαβάστε την Ιστορία →</a>
+        <div class="card">
+            <h3>Γιάννης Παπαϊωάννου</h3>
+            <p>Ο ψηλός του ρεμπέτικου και άρχοντας των Τζιτζιφιών (1913–1972).</p>
+            <a href="papaioannou.html">Διαβάστε Περισσότερα</a>
         </div>
+    </div>
 
+    <div class="source-box">
+        <strong>📌 Πνευματικά Δικαιώματα & Τεκμηρίωση:</strong><br>
+        Το φωτογραφικό υλικό προέρχεται από ελεύθερα αρχεία και ψηφιακές πλατφόρμες (Wikimedia Commons / SearchCulture.gr) με άδεια χρήσης CC BY 4.0.
     </div>
 </div>
 
 <footer>
-    <p>Ρεμπέτικες Διαδρομές © 2026</p>
+    <p>Ρεμπέτικες Διαδρομές © 2026 | Με σεβασμό στην πολιτιστική μας κληρονομιά</p>
 </footer>
 
 </body>
