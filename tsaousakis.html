@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ρεμπέτικες Διαδρομές - Αρχική Σελίδα</title>
+    <title>Πρόδρομος Τσαουσάκης - Ρεμπέτικες Διαδρομές</title>
     <style>
         body { margin: 0; font-family: Georgia, serif; background: #f3ead8; color: #2b2118; }
-        header { background: #2b2118; color: #f3ead8; text-align: center; padding: 40px 20px; }
-        header h1 { margin: 0; font-size: 36px; letter-spacing: 2px; }
-        header p { margin: 10px 0 0 0; font-size: 18px; color: #d6c5a8; font-style: italic; }
-        nav { background: #5b402c; text-align: center; padding: 14px; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
-        nav a { color: white; text-decoration: none; margin: 0 10px; font-weight: bold; font-size: 14px; }
+        header { background: #2b2118; color: #f3ead8; text-align: center; padding: 35px 20px; }
+        header h1 { margin: 0; font-size: 32px; letter-spacing: 2px; }
+        nav { background: #5b402c; text-align: center; padding: 14px; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
         nav a:hover { text-decoration: underline; }
-        .container { max-width: 1000px; margin: 30px auto; background: #ffffff; padding: 40px; border: 1px solid #c8b89d; border-radius: 6px; line-height: 1.8; font-size: 18px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .container { max-width: 800px; margin: 30px auto; background: #ffffff; padding: 35px; border: 1px solid #c8b89d; border-radius: 6px; line-height: 1.8; font-size: 18px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .photo-box { text-align: center; margin: 25px 0; }
+        .photo-box img { max-width: 100%; height: auto; border: 1px solid #c8b89d; border-radius: 4px; }
+        .photo-caption { font-size: 15px; color: #5b402c; margin-top: 8px; font-weight: bold; }
+        .license-text { font-size: 12px; font-weight: normal; color: #666; display: block; margin-top: 3px; }
+        blockquote { background: #fdf6e7; border-left: 4px solid #5b402c; margin: 20px 0; padding: 15px 20px; font-style: italic; color: #4a3829; }
         h2 { color: #5b402c; border-bottom: 2px solid #e8decb; padding-bottom: 6px; margin-top: 35px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
-        .card { background: #fdf6e7; border: 1px solid #c8b89d; padding: 20px; border-radius: 6px; text-align: center; transition: transform 0.2s; }
-        .card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(91,64,44,0.15); }
-        .card img { width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 2px solid #5b402c; margin-bottom: 10px; }
-        .card h3 { color: #5b402c; margin-top: 5px; margin-bottom: 5px; }
-        .card p { font-size: 15px; color: #666; margin-bottom: 15px; }
-        .card a { display: inline-block; background: #5b402c; color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 15px; }
-        .card a:hover { background: #2b2118; }
+        ul { line-height: 2; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #5b402c; text-decoration: none; font-weight: bold; }
         .source-box { background: #f8f1e5; border: 1px dashed #5b402c; padding: 15px; margin-top: 40px; font-size: 15px; border-radius: 4px; }
         footer { background: #2b2118; color: #f3ead8; text-align: center; padding: 25px; margin-top: 40px; }
     </style>
@@ -30,86 +28,54 @@
 
 <header>
     <h1>ΡΕΜΠΕΤΙΚΕΣ ΔΙΑΔΡΟΜΕΣ</h1>
-    <p>Αφιέρωμα στους μεγάλους δημιουργούς και θρύλους του ρεμπέτικου τραγουδιού</p>
 </header>
 
 <nav>
-    <a href="index.html">Αρχική</a>
-    <a href="vamvakaris.html">Μάρκος Βαμβακάρης</a>
-    <a href="tsitsanis.html">Βασίλης Τσιτσάνης</a>
-    <a href="pagioumtzis.html">Στράτος Παγιουμτζής</a>
-    <a href="papaioannou.html">Γιάννης Παπαϊωάννου</a>
-    <a href="delias.html">Ανέστης Δελιάς</a>
-    <a href="hatjichristos.html">Απόστολος Χατζηχρήστος</a>
-    <a href="batis.html">Γιώργος Μπάτης</a>
-    <a href="tsousakis.html">Πρόδρομος Τσαουσάκης</a>
+    <a href="index.html">← Πίσω στην Αρχική Σελίδα</a>
 </nav>
 
 <div class="container">
-    <h2 style="margin-top: 0;">Καλώς ήρθατε στις Ρεμπέτικες Διαδρομές</h2>
-    <p>Το ρεμπέτικο τραγούδι αποτελεί την ψυχή, τον καημό, τη χαρά και την αντίσταση του λαϊκού ανθρώπου. Μέσα από τα καφενεία, τους τεκέδες, τα προσφυγικά παράπηγματα και αργότερα τα μεγάλα κέντρα, γεννήθηκαν μορφές θρυλικές που σφράγισαν με την τέχνη και τη ζωή τους την ιστορία της ελληνικής μουσικής[span_0](start_span)[span_0](end_span).</p>
+    <a href="index.html" class="back-link">← Αρχική</a>
     
-    <p>Σε αυτόν τον δικτυακό τόπο, μπορείτε να περιηγηθείτε στις ζωές και στο έργο των εμβληματικών δημιουργών που καθόρισαν την πορεία του είδους[span_1](start_span)[span_1](end_span):</p>
+    <h1 style="color:#5b402c; margin-bottom: 5px;">Πρόδρομος Τσαουσάκης</h1>
+    <p style="margin-top:0; color:#666;"><em>Η Χρυσή Φωνή του Μεταπολεμικού Λαϊκού Τραγουδιού (1915 – 1979)</em></p>
 
-    <div class="grid">
-        <div class="card">
-            <img src="vamvakaris.jpg" alt="Μάρκος Βαμβακάρης">
-            <h3>Μάρκος Βαμβακάρης</h3>
-            <p>Ο Πατριάρχης του ρεμπέτικου και θεμελιωτής της πειραιώτικης σχολής.</p>
-            <a href="vamvakaris.html">Διαβάστε Περισσότερα</a>
-        </div>
-        <div class="card">
-            <img src="tsitsanis.jpg" alt="Βασίλης Τσιτσάνης">
-            <h3>Βασίλης Τσιτσάνης</h3>
-            <p>Ο αναμορφωτής του λαϊκού τραγουδιού και τιτάνας της σύνθεσης.</p>
-            <a href="tsitsanis.html">Διαβάστε Περισσότερα</a>
-        </div>
-        <div class="card">
-            <img src="pagioumtzis.jpg" alt="Στράτος Παγιουμτζής">
-            <h3>Στράτος Παγιουμτζής</h3>
-            <p>Ο μοναδικός «τενόρος» και φωνητικός θρύλος του ρεμπέτικου.</p>
-            <a href="pagioumtzis.html">Διαβάστε Περισσότερα</a>
-        </div>
-        <div class="card">
-            <img src="papaioannou.jpg" alt="Γιάννης Παπαϊωάννου">
-            <h3>Γιάννης Παπαϊωάννου</h3>
-            <p>Ο ψηλός του ρεμπέτικου και άρχοντας των Τζιτζιφιών (1913–1972)[span_2](start_span)[span_2](end_span).</p>
-            <a href="papaioannou.html">Διαβάστε Περισσότερα</a>
-        </div>
-        <div class="card">
-            <img src="delias.jpg" alt="Ανέστης Δελιάς">
-            <h3>Ανέστης Δελιάς</h3>
-            <p>Ο Μικρασιάτης «αριστοκράτης» και δεξιοτέχνης του μπαγλαμά (1912–1944)[span_3](start_span)[span_3](end_span).</p>
-            <a href="delias.html">Διαβάστε Περισσότερα</a>
-        </div>
-        <div class="card">
-            <img src="hatjichristos.jpg" alt="Απόστολος Χατζηχρήστος">
-            <h3>Απόστολος Χατζηχρήστος</h3>
-            <p>Η μελαγχολική ιδιοφυΐα και λυρικός συνθέτης του μεσοπολέμου (1901–1959)[span_4](start_span)[span_4](end_span).</p>
-            <a href="hatjichristos.html">Διαβάστε Περισσότερα</a>
-        </div>
-        <div class="card">
-            <img src="batis.jpg" alt="Γιώργος Μπάτης">
-            <h3>Γιώργος Μπάτης</h3>
-            <p>Ο εκκεντρικός μάγκας του Πειραιά και ιδρυτής του «Σωτήρα» (1889–1954)[span_5](start_span)[span_5](end_span).</p>
-            <a href="batis.html">Διαβάστε Περισσότερα</a>
-        </div>
-        <div class="card">
-            <img src="tsousakis.jpg" alt="Πρόδρομος Τσαουσάκης">
-            <h3>Πρόδρομος Τσαουσάκης</h3>
-            <p>Η χρυσή φωνή και εμβληματικός ερμηνευτής του λαϊκού τραγουδιού (1915–1979).</p>
-            <a href="tsousakis.html">Διαβάστε Περισσότερα</a>
+    <div class="photo-box">
+        <!-- Φρόντισε να έχεις μια φωτογραφία του με όνομα tsousakis.jpg -->
+        <img src="tsousakis.jpg" alt="Πρόδρομος Τσαουσάκης">
+        <div class="photo-caption">
+            Πρόδρομος Τσαουσάκης
+            <span class="license-text">Πηγή φωτογραφίας: Wikimedia Commons / SearchCulture.gr | Άδεια χρήσης: CC BY 4.0</span>
         </div>
     </div>
 
+    <h2>Η Καταγωγή και η Ασύγκριτη Χροιά</h2>
+    <p>Ο Πρόδρομος Τσαουσάκης γεννήθηκε στην Κωνσταντινούπολη το 1915 και βρέθηκε από μικρή ηλικία στην Ελλάδα, ζώντας την εμπειρία της προσφυγιάς. Διέθετε μια από τις πιο αναγνωρίσιμες, στιβαρές και ταυτόχρονα βαθιά συναισθηματικές φωνές της ελληνικής δισκογραφίας. Η ερμηνευτική του δεινότητα του επέτρεπε να αποδίδει με μοναδικό τρόπο τόσο τα βαριά ζεϊμπέκικα όσο και τα πιο λυρικά ή χορευτικά τραγούδια της εποχής του.</p>
+
+    <h2>Ο Στυλοβάτης των Μεγάλων Συνθετών</h2>
+    <p>Συνεργάστηκε στενά με τους μεγαλύτερους δημιουργούς του μεσοπολέμου και της μεταπολεμικής περιόδου, όπως ο Βασίλης Τσιτσάνης, ο Απόστολος Χατζηχρήστος και ο Μανώλης Χιώτης. Υπήρξε ο βασικός ερμηνευτής σε αθάνατες επιτυχίες που καθόρισαν την πορεία του λαϊκού τραγουδιού, δίνοντας ψυχή σε στίχους και μελωδίες που έμεναν χαραγμένες στη μνήμη του κόσμου. Έφυγε από τη ζωή το 1979, αφήνοντας πίσω του μια τεράστια κληρονομιά.</p>
+
+    <blockquote>
+        «Ο Τσαουσάκης δεν τραγουδούσε απλώς τα λόγια· τα ζούσε, τα φώτιζε με τη φωνή του και τα έκανε εθνικό κτήμα.»
+    </blockquote>
+
+    <h2>Σημαντικές & Διαχρονικές Ερμηνείες</h2>
+    <ul>
+        <li><strong>Συννεφιασμένη Κυριακή</strong> (μία από τις ιστορικότερες πρώτες εκτελήσεις του μαζί με τη Σωτηρία Μπέλλου)</li>
+        <li><strong>Τρελή κι απονενοημένη</strong></li>
+        <li><strong>Κάτσε να σου πω</strong></li>
+        <li><strong>Ο τραμπαρίφας</strong></li>
+        <li><strong>Πήρα τη στράτα κι έρχομαι</strong></li>
+    </ul>
+
     <div class="source-box">
-        <strong>📌 Πνευματικά Δικαιώματα & Τεκμηρίωση:</strong><br>
-        Το φωτογραφικό υλικό προέρχεται από ελεύθερα αρχεία και ψηφιακές πλατφόρμες (Wikimedia Commons / SearchCulture.gr) με άδεια χρήσης CC BY 4.0[span_6](start_span)[span_6](end_span).
+        <strong>📌 Πηγή Πληροφοριών:</strong><br>
+        Τα ιστορικά δεδομένα βασίζονται σε αρχεία της ελληνικής δισκογραφίας και μελέτες για το μεταπολεμικό ρεμπέτικο και λαϊκό τραγούδι.
     </div>
 </div>
 
 <footer>
-    <p>Ρεμπέτικες Διαδρομές © 2026 | Με σεβασμό στην πολιτιστική μας κληρονομιά[span_7](start_span)[span_7](end_span)</p>
+    <p>Ρεμπέτικες Διαδρομές © 2026</p>
 </footer>
 
 </body>
