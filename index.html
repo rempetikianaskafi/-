@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ρεμπέτικες Διαδρομές | Η Εγκυκλοπαίδεια του Ρεμπέτικου</title>
-    <meta name="description" content="Καλώς ήρθατε στις Ρεμπέτικες Διαδρομές. Ανακαλύψτε την ιστορία, τους μεγάλους δημιουργούς και τα τραγούδια του αυθεντικού ρεμπέτικου.">
+    <meta name="description" content="Καλώς ήρθατε στις Ρεμπέτικες Διαδρομές. Ένα ταξίδι στην ιστορία, τους δημιουργούς και τα τραγούδια του αυθεντικού ρεμπέτικου.">
     <meta name="keywords" content="ρεμπέτικες διαδρομές, ρεμπέτικο, μπουζούκι, βαμβακάρης, τσιτσάνης, νίνου, λαϊκή μουσική">
     
     <style>
@@ -54,10 +54,22 @@
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
+        .intro-quote {
+            font-style: italic;
+            font-size: 1.2em;
+            color: #5b402c;
+            border-left: 4px solid #e09f3e;
+            padding-left: 15px;
+            margin: 20px 0;
+            background: #fdf8ed;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+        }
         h2 {
             color: #5b402c;
             border-bottom: 2px solid #e09f3e;
             padding-bottom: 8px;
+            margin-top: 30px;
         }
         .grid {
             display: grid;
@@ -83,6 +95,32 @@
             font-weight: bold;
             font-size: 1.1em;
         }
+        .upload-section {
+            background-color: #fdf8ed;
+            border: 2px dashed #e09f3e;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .upload-section h3 {
+            color: #8c2d19;
+            margin-top: 0;
+        }
+        .btn-email {
+            display: inline-block;
+            background-color: #8c2d19;
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        .btn-email:hover {
+            background-color: #5b402c;
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -105,11 +143,17 @@
     </nav>
 
     <div class="container">
-        <h2>Καλώς ήρθατε στις Ρεμπέτικες Διαδρομές</h2>
+        
+        <!-- ΑΤΑΚΑ / ΕΙΣΑΓΩΓΗ -->
+        <div class="intro-quote">
+            «Το ρεμπέτικο είναι η ανάσα του λαού, ο καημός και η αλήθεια της γειτονιάς. Καλώς ήρθατε στις Ρεμπέτικες Διαδρομές, ένα ταξίδι στις ρίζες της μουσικής μας ιστορίας.»
+        </div>
+
         <p>
-            Μια διαδικτυακή εγκυκλοπαίδεια αφιερωμένη στην πολιτιστική κληρονομιά του ρεμπέτικου. Εξερευνήστε τις ζωές, το έργο και τις μεγάλες επιτυχίες των σπουδαιότερων δημιουργών και εκτελεστών που διαμόρφωσαν το αυθεντικό λαϊκό μας τραγούδι.
+            Εξερευνήστε τις ζωές, το έργο και τις μεγάλες επιτυχίες των σπουδαιότερων δημιουργών και εκτελεστών που διαμόρφωσαν το αυθεντικό λαϊκό μας τραγούδι.
         </p>
 
+        <!-- ΛΙΣΤΑ ΚΑΛΛΙΤΕΧΝΩΝ -->
         <h2>Οι Μεγάλοι Δημιουργοί</h2>
         <div class="grid">
             <div class="card"><a href="vamvakaris.html">Μάρκος Βαμβακάρης</a></div>
@@ -125,6 +169,14 @@
             <div class="card"><a href="vambakaris_a.html">Απόστολος Χατζηχρήστος</a></div>
             <div class="card"><a href="tountas.html">Παναγιώτης Τούντας</a></div>
         </div>
+
+        <!-- ΕΝΟΤΗΤΑ ΑΠΟΣΤΟΛΗΣ ΦΩΤΟΓΡΑΦΙΩΝ -->
+        <div class="upload-section">
+            <h3>📷 Έχετε σπάνιο υλικό ή φωτογραφίες;</h3>
+            <p>Βοηθήστε μας να εμπλουτίσουμε το αρχείο των <em>Ρεμπέτικων Διαδρομών</em>. Αν έχετε σπάνιες φωτογραφίες, έγγραφα ή ιστορικές πληροφορίες για τους καλλιτέχνες, στείλτε μας τα μέσω email!</p>
+            <a href="mailto:info@rempetikesdiadromes.gr?subject=Αποστολή%20Υλικού%20-%20Ρεμπέτικες%20Διαδρομές" class="btn-email">✉️ Στείλτε μας Φωτογραφίες &amp; Υλικό</a>
+        </div>
+
     </div>
 
     <footer>
